@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WS API statistinė F025 forma</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Content goes here -->
+    <header>
+        <h1>Tinko paslaugos (angl. Web Service, WS)
+            serverio taikomoji programa (angl. Application Programming Interface, API)</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Namo :)</a></li>
+                <li><a href="#">Apie :?</a></li>
+                <li><a href="#">Kontaktai :*</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Integracinės sąsajos architektūra</h1>
+            <h3>VLK SVEIDRA posistemės (APAP) duomenų apsikeitimo integracinė sąsaja su
+                asmens sveikatos priežiūros įstaigos (ASPĮ) informacine sistema (HIS)</h3>
+        </article>
+
+        <div class="container">
+            <div class="container1">
+                <h3>APAP programinės įrangos architektūra WS kliento lygmenyje</h3>
+                <div class="container1-img"> </div>
+            </div>
+
+            <div class="container2">
+                <h3>WS API kliento adaptavimas</h3>
+                <div>1. WS API <br>SQLAlchemy ORM /užklausomis? gauna F025 formos registracijos duomenis iš HIS DB
+                    ir atvaizduoja F025 formoje.
+                </div>
+                <div>2. WS API <br> išsaugo F025 formoje suvestą apsilankymo paslaugų informaciją ir sukuria XML SOAP žinutę.
+                </div>
+            </div>
+            <div class="container2">
+                <div>3. WS API <br>siunčia F025 formos duomenų pranešimo HTTPS SOAP užklausą (angl. request) ir
+                    autentifikacijos parametrus<br>APAP HTTP WS serveriui.
+                </div>
+                <div>4. APAP WS serveris<br> autentifikuotam klientui suformuoja XML failą ir
+                    grąžina atsakymą (angl. response) apie F025 formos išsaugotus duomenis.
+                </div>
+            </div>
+            <div class="container2">
+                <div>5. WS API apdoroja gautą SOAP žinutę ir perduoda duomenis į HIS DB</div>
+                <div>WS API autentifikavimas<br> Vartotojo vardas ir slaptažodis turi būti perduodami kiekvienoje
+                    užklausoje HTTP(S) header srityje parametro-reikšmės pavidalu (key-value, parametrai „username“ ir „password“).
+                </div>
+                <div>
+                    WS API integracija su APAP WS<br> Funkcijos siųsti ir priimti APAP duomenis pateiktos SVEIDRA APAP TINKLINĖS SĄSAJOS APRAŠE.
+                </div>
+            </div>
+
+        </div>
+
+        <section>
+            <h2>WS API F025 formos sukūrimo  aktualumas</h2>
+            <p>HIS nepalaikoma diegėjų, išeities programinio kodo (source) nėra.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 F025 Website</p>
+    </footer>
+</body>
+</html>

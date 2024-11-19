@@ -1,0 +1,124 @@
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+article, section {
+    margin-bottom: 30px;
+}
+
+article h2, section h2 {
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    height: 80vh;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: DodgerBlue;
+ #  border: 4px solid black;
+ #  flex container elementu (flex items) isdestymas main axis atzvilgiu row- horizontali, column - vertikali
+ #  flex-direction: row-reverse;
+ #  justify-content: flex-start; space-evently;
+}
+
+.container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    background-color: DodgerBlue;
+    width: 50%;
+}
+
+.container1 > h3 {
+    text-align: center;
+}
+.container1-img {
+    display: flex;
+    height: 80vh;
+    background-image: url("images/F025_ws_architektura.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px;
+    padding: 20px;
+}
+
+.container2 {
+    display: flex;
+    background-color: DodgerBlue;
+    width: 20%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 20px;
+}
+
+.container2 > div {
+    border: solid DodgerBlue 2px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#box2 {
+    border: solid grey 2px ;
+}
+
+#box3 {
+    border: solid green 2px;
+}
+
+#box4 {
+    border: solid blue 2px;
+}
